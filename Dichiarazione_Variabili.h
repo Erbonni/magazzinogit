@@ -1,4 +1,4 @@
- //
+//
 // Created by Alberto Aquilini on 15/04/26.
 //
 
@@ -6,9 +6,8 @@
 #define MAGAZZINO_DICHIARAZIONE_VARIABILI_H
 
 
-extern int colonne;
-extern int prodotti;
-
+const int colonne=2;
+void inserisciProdotti(float m[][colonne], float righe);
+void stampaProdotti(float m[][colonne], float righe);
 void seNonAbilitato();
-
 #endif //MAGAZZINO_DICHIARAZIONE_VARIABILI_H

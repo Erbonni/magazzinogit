@@ -19,11 +19,11 @@ using namespace std;
 
 const int COL = 2;
 
-void stampaProdotti(int matrice[][colonne], int n) {
+void stampaProdotti(int matrice[][colonne], int righe) {
     // tabella
     cout << "\nPRODOTTO\tQUANTITA'\tPREZZO" << endl;
 
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < righe; i++) {
         // indice del prodotto
         cout << i + 1 << "\t\t";
 
@@ -37,4 +37,28 @@ void stampaProdotti(int matrice[][colonne], int n) {
 
 void seNonAbilitato(){
     cout<<"Si prega di inserire dei valori almeno una volta\n";
+}
+
+void totaleProdotto(float m[][colonne], int righe) {
+
+    cout << "\nVALORE DI OGNI PRODOTTO:\n";
+
+    for (int i = 0; i < righe; i++) {
+        float totale = m[i][0] * m[i][1];
+
+        cout << "Prodotto " << i + 1 << ": "
+             << totale << " euro" << endl;
+    }
+}
+
+void valoreMagazzino(float m[][colonne], int righe) {
+
+    float somma = 0;
+
+    for (int i = 0; i < righe; i++) {
+        somma += m[i][0] * m[i][1];
+    }
+
+    cout << "\nValore totale del magazzino: "
+         << somma << " euro" << endl;
 }

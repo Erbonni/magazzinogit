@@ -8,7 +8,7 @@ int main() {
     bool abilitazione=false;
     cout<<"Quanti prodotti vuoi inserire in magazzino?"<<endl;
     cin>>nProdotti;
-    int m[nProdotti][colonne];
+    float m[nProdotti][colonne];
     do {
         cout << "\nMENU\n";
         cout << " 1. Inserire quantita' prodotti e prezzi\n 2. Visualizzare magazzino\n 3. Valore totale di un prodotto\n"<<endl;
@@ -24,14 +24,14 @@ int main() {
 
         case 2:
             if (abilitazione)
-                stampaProdotti(m);
+                stampaProdotti(m, nProdotti);
             else
                 seNonAbilitato();
             break;
 
         case 3:
             if (abilitazione)
-                totaleProdotto(m);
+                totaleProdotto(m, nProdotti);
             else
                 seNonAbilitato();
             break;
@@ -43,7 +43,7 @@ int main() {
 
         case 5:
             if (abilitazione)
-                valoreMagazzino(m);
+                valoreMagazzino(m, nProdotti);
             else
                 seNonAbilitato();
             break;

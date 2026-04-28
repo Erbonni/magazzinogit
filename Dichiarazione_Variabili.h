@@ -10,4 +10,6 @@ const int colonne=2;
 void inserisciProdotti(float m[][colonne], float righe);
 void stampaProdotti(float m[][colonne], float righe);
 void seNonAbilitato();
+void totaleProdotto(float m[][colonne], int righe);
+void valoreMagazzino(float m[][colonne], int righe);
 #endif //MAGAZZINO_DICHIARAZIONE_VARIABILI_H

@@ -6,8 +6,10 @@ int main() {
 
     int scelta, nProdotti;
     bool abilitazione=false;
-    cout<<"Quanti prodotti vuoi inserire in magazzino?"<<endl;
-    cin>>nProdotti;
+    do {
+        cout<<"Quanti prodotti vuoi inserire in magazzino?"<<endl;
+        cin>>nProdotti;
+    } while (nProdotti <= 0);
     int m[nProdotti][colonne];
     do {
         cout << "\nMENU\n";

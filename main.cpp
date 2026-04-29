@@ -6,9 +6,11 @@ int main() {
 
     int scelta, nProdotti;
     bool abilitazione=false;
-    cout<<"Quanti prodotti vuoi inserire in magazzino?"<<endl;
-    cin>>nProdotti;
-    float m[nProdotti][colonne];
+    do {
+        cout<<"Quanti prodotti vuoi inserire in magazzino?"<<endl;
+        cin>>nProdotti;
+    } while (nProdotti <= 0);
+    int m[nProdotti][colonne];
     do {
         cout << "\nMENU\n";
         cout << " 1. Inserire quantita' prodotti e prezzi\n 2. Visualizzare magazzino\n 3. Valore totale di un prodotto\n"<<endl;

@@ -26,14 +26,14 @@ int main() {
 
         case 2:
             if (abilitazione)
-                stampaProdotti(m);
+                stampaProdotti(m, nProdotti);
             else
                 seNonAbilitato();
             break;
 
         case 3:
             if (abilitazione)
-                totaleProdotto(m);
+                totaleProdotto(m, nProdotti);
             else
                 seNonAbilitato();
             break;
@@ -45,7 +45,7 @@ int main() {
 
         case 5:
             if (abilitazione)
-                valoreMagazzino(m);
+                valoreMagazzino(m, nProdotti);
             else
                 seNonAbilitato();
             break;

@@ -9,6 +9,8 @@
 extern int colonne;
 extern int prodotti;
 
-void seNonAbilitato();
+void piuPresente(float m[][colonne], int righe);
+void valoreMaggiore(float m[][colonne], int righe);
+
 
 #endif //MAGAZZINO_DICHIARAZIONE_VARIABILI_H

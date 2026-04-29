@@ -4,6 +4,9 @@ using namespace std;
 
 int main() {
 
+
+int main() {
+
     int scelta, nProdotti;
     bool abilitazione=false;
     do {
@@ -52,7 +55,7 @@ int main() {
 
         case 6:
             if (abilitazione)
-                piucostoso(m);
+               valoreMaggiore(m);
             else
                 seNonAbilitato();
             break;

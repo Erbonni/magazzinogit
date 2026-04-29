@@ -4,20 +4,17 @@ using namespace std;
 
 int main() {
 
-
-int main() {
-
     int scelta, nProdotti;
     bool abilitazione=false;
     do {
         cout<<"Quanti prodotti vuoi inserire in magazzino?"<<endl;
         cin>>nProdotti;
     } while (nProdotti <= 0);
-    int m[nProdotti][colonne];
+    float m[nProdotti][colonne];
     do {
         cout << "\nMENU\n";
-        cout << " 1. Inserire quantita' prodotti e prezzi\n 2. Visualizzare magazzino\n 3. Valore totale di un prodotto\n"<<endl;
-        cout<<" 4. Individuae prodotto con più unità\n 5. Valore totale magazzino\n 6. Prodotto con valore maggiore\n 0. Esci\n";
+        cout << " 1. Inserire quantita' prodotti e prezzi\n 2. Visualizzare magazzino\n 3. Valore totale dei prodotti\n";
+        cout<<" 4. Individuare prodotto con più unità\n 5. Valore totale magazzino\n 6. Prodotto con valore maggiore\n 0. Esci\n";
         cin >> scelta;
 
         switch (scelta) {
@@ -42,7 +39,7 @@ int main() {
             break;
 
         case 4:
-            piuPresente(m);
+            piuPresente(m, nProdotti);
             abilitazione=true;
             break;
 
@@ -55,7 +52,7 @@ int main() {
 
         case 6:
             if (abilitazione)
-               valoreMaggiore(m);
+               valoreMaggiore(m, nProdotti);
             else
                 seNonAbilitato();
             break;

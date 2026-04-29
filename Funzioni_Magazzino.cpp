@@ -30,5 +30,5 @@ void valoreMaggiore(float m[][colonne], int righe) {
     }
 
     cout << "\nIl prodotto con il valore totale piu' alto e' il numero: " << indiceMax + 1
-         << " (Valore: " << maxValore << " euro)" << endl;
+         << "Valore: " << maxValore << " euro" << endl;
 }

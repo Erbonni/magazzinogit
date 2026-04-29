@@ -8,7 +8,7 @@
 
 extern int colonne;
 extern int prodotti;
-
+//funzioni per il 4 e il 6 punto
 void piuPresente(float m[][colonne], int righe);
 void valoreMaggiore(float m[][colonne], int righe);
 

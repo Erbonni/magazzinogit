@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Dichiarazione_Variabili.h"
 using namespace std;
-
+//punti 4 e 6
 void piuPresente(float m[][colonne], int righe) {
     float maxUnita = m[0][0];
     int indiceMax = 0;

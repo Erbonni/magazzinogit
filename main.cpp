@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Dichiarazione_Variabili.h"
 using namespace std;
-
+//boh
 int colonne = 2;
 int prodotti = 7;
 

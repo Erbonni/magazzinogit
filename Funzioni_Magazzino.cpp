@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Dichiarazione_Variabili.h"
 using namespace std;
-
+//punto 4
 void piuPresente(float m[][colonne], int righe) {
     float maxUnita = m[0][0];
     int indiceMax = 0;
@@ -16,7 +16,7 @@ void piuPresente(float m[][colonne], int righe) {
     cout << "\nIl prodotto con piu' unita' e' il numero: " << indiceMax + 1
          << " (Quantita': " << maxUnita << ")" << endl;
 }
-
+//punto 6
 void valoreMaggiore(float m[][colonne], int righe) {
     float maxValore = m[0][0] * m[0][1];
     int indiceMax = 0;
